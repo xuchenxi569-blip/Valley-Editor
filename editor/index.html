@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>星露谷任务视频编辑器</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="editor-panel">
+      <header>
+        <span class="pixel-star">✦</span>
+        <div>
+          <h1>农场任务编辑器</h1>
+          <p>修改文字，右侧会立即预览最终排版</p>
+        </div>
+      </header>
+
+      <div class="season-row">
+        <label>季节<input id="season" maxlength="6" /></label>
+        <label>第几天<input id="day" type="number" min="1" max="999" /></label>
+        <label>天气<input id="weather" maxlength="6" /></label>
+      </div>
+
+      <div class="field-group">
+        <label><span>🐾 任务一 · 宠物</span><textarea id="task1" maxlength="32"></textarea></label>
+        <label><span>◆ 任务二 · 采集</span><textarea id="task2" maxlength="32"></textarea></label>
+        <label><span>♥ 任务三 · 社交</span><textarea id="task3" maxlength="32"></textarea></label>
+        <label><span>★ 特别委托</span><textarea id="bonus" maxlength="42"></textarea></label>
+      </div>
+
+      <button id="exportButton" class="export-button">导出 MP4 视频</button>
+      <div id="status" class="status">填写完成后，点击按钮生成视频。</div>
+      <a id="downloadLink" class="download-link hidden" href="#">下载生成的视频</a>
+    </section>
+
+    <section class="preview-panel">
+      <div class="preview-heading">
+        <span>最终画面预览</span>
+        <small>9:16 · 1080 × 1920</small>
+      </div>
+      <div class="phone-frame">
+        <div id="previewLoading" class="preview-loading">
+          正在生成与视频完全一致的预览……
+        </div>
+        <img id="finalPreview" alt="视频最终画面预览" />
+      </div>
+      <p class="preview-note">停止输入约 1 秒后自动保存到 content.json，并刷新真实画面。</p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

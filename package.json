@@ -1,0 +1,16 @@
+{
+  "name": "farm-quest",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "editor": "node server.js",
+    "render": "remotion render src/index.tsx DailyQuest outputs/daily-quest-stardew.mp4 --concurrency=2",
+    "poster": "remotion still src/index.tsx DailyQuest outputs/daily-quest-stardew.png --frame=145"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.525",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.525"
+  }
+}

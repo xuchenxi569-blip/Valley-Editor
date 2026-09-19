@@ -1,0 +1,9 @@
+node_modules/
+outputs/
+out/
+*.mp4
+*.log
+.DS_Store
+Thumbs.db
+editor-render-props.json
+.cursor/

@@ -1,0 +1,29 @@
+{
+  "tasksPanelTitle": "信箱",
+  "season": "秋季",
+  "weather": "晴",
+  "date": "2026/09/16",
+  "tasks": [
+    {
+      "category": "宠物",
+      "points": "+10",
+      "text": "带小狗出去走走"
+    },
+    {
+      "category": "采集",
+      "points": "+10",
+      "text": "采集竹子，为种植做准备"
+    },
+    {
+      "category": "社交",
+      "points": "+10",
+      "text": "和一位小镇居民打招呼"
+    }
+  ],
+  "bonus": {
+    "points": "+20",
+    "text": "对今天的自己说声辛苦了"
+  },
+  "message": "「慢慢来，星露谷的作物每一颗都在悄悄长大。」",
+  "day": 1
+}
